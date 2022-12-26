@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+   
+    <title>Document</title>
+</head>
+<body>
+  <h1>Attendence App</h1>
+
+    <div class = "main">
+        <table>
+            <tr>
+                <th>SN</th>
+                <th>Name</th>
+                <th>class</th>
+                <th>Attendence</th>
+            </tr>
+
+            <tr>
+                <td>01</td>
+                <td>Rakibul Islam</td>
+                <td>171442034</td>
+                <td>
+                    <button onclick = "present()" >Present</button>
+                    <button onclick = "absent()" >Absent</button>
+                    <button onclick = "late()" >Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>salman bhai</td>
+                <td>171442014</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>ali john kumar</td>
+                <td>171442056</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>son yon min</td>
+                <td>171442044</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>msd bsdk</td>
+                <td>171442548</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>06</td>
+                <td>Jeon Statham</td>
+                <td>171442022</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>pikachu</td>
+                <td>171442686</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>chandu</td>
+                <td>171442548</td>
+                <td>
+                    <button onclick = "present()">Present</button>
+                    <button onclick = "absent()">Absent</button>
+                    <button onclick = "late()">Late</button>
+                </td>
+            </tr>
+
+        </table>
+        <button class="xyz" onclick="result()">Submit</button>
+    </div>
+
+    <div class = "newly">
+      <p id="r"></p>
+    </div>
+
+
+    <div class = "footer">
+
+        Dbms mini project
+
+    </div>
+    <script >
+      var p = 0;
+      var a = 0;
+      var l = 0;
+var r=document.getElementById('r');        
+present = () =>{
+p++;
+
+}
+
+absent = () =>{
+a++;
+
+}
+
+late = () =>{
+l++
+}
+result = () =>{
+//alert('present '+p+' absent '+a+' late '+l);
+
+r.innerHTML=`<p>Present: ${p} Absent: ${a} Late: ${l} </p>`;
+p=0, a=0, l=0;
+}       
+  
+</script>
+</body>
+</html>
