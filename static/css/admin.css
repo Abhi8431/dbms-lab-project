@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    padding: 2%;
+    border: 5px solid orange;
+    border-radius: 0.65em;
+    margin: 60px;
+}
+
+/* #student{
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-30%);
+}
+
+#teacher{
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-20%);
+} */
+
+.inputs{
+    display: block;
+}
